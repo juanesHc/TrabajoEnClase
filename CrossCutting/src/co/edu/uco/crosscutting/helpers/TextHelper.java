@@ -2,7 +2,7 @@ package co.edu.uco.crosscutting.helpers;
 
 public class TextHelper {
 	
-	public static final String EMPTY="";
+	public static final String EMPTY = "";
 	
 	private TextHelper() {
 		
@@ -12,23 +12,31 @@ public class TextHelper {
 		return ObjectHelper.isNull(string);
 	}
 	
-	public static String getDefault(final String string,final String defaultValue) {
+	public static String getDefault(final String string, final String defaultValue) {
 		return ObjectHelper.getDefault(string, defaultValue);
 	}
-	
+
 	public static String getDefault(final String string) {
-		return ObjectHelper.getDefault(string, EMPTY);
+		return getDefault(string, EMPTY);
 	}
 	
 	public static boolean isEmpty(final String string) {
-		return getDefault(string).intern()==EMPTY.intern();
-		}
+		return EMPTY.equals(getDefault(string));
+	}
 	
-	public static void main (String[] args) {
-		String a="";
-		String b=new String("");
+	public static boolean isEmptyAppplyingTrim(final String string) {
+		return isEmpty(applyTrim(string));
+	}
+	
+	public static String applyTrim(final String string) {
+		return getDefault(string).trim();
+	}
+	
+	public static void main(String[] args) {
+		String b = null;
 		
-		System.out.println(isEmpty(b));
+		
+		System.out.println(b.trim());
 	}
 
 }
