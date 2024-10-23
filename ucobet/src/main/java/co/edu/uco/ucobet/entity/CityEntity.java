@@ -2,11 +2,9 @@ package co.edu.uco.ucobet.entity;
 
 import java.util.UUID;
 
-import co.edu.uco.crosscutting.helpers.ObjectHelper;
-import co.edu.uco.crosscutting.helpers.TextHelper;
-import co.edu.uco.crosscutting.helpers.UUIDHelper;
-import co.edu.uco.ucobet.dto.CountryDTO;
-
+import co.edu.uco.crosscuting.helpers.ObjectHelper;
+import co.edu.uco.crosscuting.helpers.TextHelper;
+import co.edu.uco.crosscuting.helpers.UUIDHelper;
 public class CityEntity extends DomainEntity{
 	
 	private String name;

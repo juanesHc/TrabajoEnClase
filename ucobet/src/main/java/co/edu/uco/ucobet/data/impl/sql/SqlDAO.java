@@ -2,7 +2,7 @@ package co.edu.uco.ucobet.data.impl.sql;
 
 import java.sql.Connection;
 
-import co.edu.uco.crosscutting.helpers.SqlConnectionHelper;
+import co.edu.uco.crosscuting.helpers.SqlConnectionHelper;
 import co.edu.uco.ucobet.crosscutting.exceptions.DataUcoBetException;
 
 public class SqlDAO {

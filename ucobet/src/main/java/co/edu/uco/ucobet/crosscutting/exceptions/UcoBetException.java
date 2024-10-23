@@ -1,7 +1,7 @@
 package co.edu.uco.ucobet.crosscutting.exceptions;
 
-import co.edu.uco.crosscutting.exceptions.UcoApplicationException;
-import co.edu.uco.crosscutting.exceptions.enums.Layer;
+import co.edu.uco.crosscuting.exceptions.UcoApplicationException;
+import co.edu.uco.crosscuting.exceptions.enums.Layer;
 
 public class UcoBetException extends UcoApplicationException {
 
